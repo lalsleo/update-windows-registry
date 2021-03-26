@@ -1,0 +1,11 @@
+---
+- name: Add or update registry
+  hosts: all
+  
+  tasks:
+  - name: Add or update registry
+    win_regedit:
+      path: "{{ path_registry }}"
+      name: "{{ name_registry }}"
+      data: "{{ data_registry }}"
+      type: "{{ type_registry }}"
