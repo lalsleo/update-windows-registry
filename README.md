@@ -1,1 +1,1 @@
-# update-windows-registry
+# Changes in Windows Registry
