@@ -3,6 +3,11 @@
   hosts: all
   
   tasks:
+  - name: Copiando arquivo de registro
+    win_copy:
+      src: "{{ awx_path_registry }}"
+      dest: C:\temp\
+
   - name: Add or update registry
     win_regmerge:
-      path: "{{ path_registry }}"
+      path: "{{ local_path_registry }}"
