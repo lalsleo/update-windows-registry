@@ -1,0 +1,8 @@
+---
+- name: Add or update registry
+  hosts: all
+  
+  tasks:
+  - name: Add or update registry
+    win_regmerge:
+      path: "{{ path_registry }}"
